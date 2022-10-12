@@ -19,7 +19,7 @@
           "parentRowSpace": 1,
           "type": "CANVAS_WIDGET",
           "canExtend": true,
-          "version": 59,
+          "version": 64,
           "minHeight": 740,
           "parentColumnSpace": 1,
           "dynamicBindingPathList": [],
@@ -638,7 +638,8 @@
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
                           "computedValue": "{{customers_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"cid\"]))}}",
-                          "cellBackground": ""
+                          "cellBackground": "",
+                          "validation": {}
                         },
                         "cname": {
                           "allowCellWrapping": false,
@@ -664,7 +665,8 @@
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
                           "computedValue": "{{customers_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"cname\"]))}}",
-                          "cellBackground": ""
+                          "cellBackground": "",
+                          "validation": {}
                         },
                         "cemail": {
                           "allowCellWrapping": false,
@@ -690,7 +692,8 @@
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
                           "computedValue": "{{customers_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"cemail\"]))}}",
-                          "cellBackground": ""
+                          "cellBackground": "",
+                          "validation": {}
                         },
                         "photo": {
                           "allowCellWrapping": false,
@@ -716,7 +719,8 @@
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
                           "computedValue": "{{customers_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"photo\"]))}}",
-                          "cellBackground": ""
+                          "cellBackground": "",
+                          "validation": {}
                         }
                       },
                       "onRowSelected": "{{navigateTo('Selected',{cid:customers_table.selectedRow.cid},'SAME_WINDOW')}}",
@@ -990,7 +994,8 @@
                           "label": "Customer ID",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
-                          "computedValue": "{{orders_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"customer_id\"]))}}"
+                          "computedValue": "{{orders_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"customer_id\"]))}}",
+                          "validation": {}
                         },
                         "order_id": {
                           "allowCellWrapping": false,
@@ -1014,7 +1019,8 @@
                           "label": "Order ID",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
-                          "computedValue": "{{orders_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"order_id\"]))}}"
+                          "computedValue": "{{orders_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"order_id\"]))}}",
+                          "validation": {}
                         },
                         "payment_method": {
                           "allowCellWrapping": false,
@@ -1038,7 +1044,8 @@
                           "label": "Payment Method",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
-                          "computedValue": "{{orders_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"payment_method\"]))}}"
+                          "computedValue": "{{orders_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"payment_method\"]))}}",
+                          "validation": {}
                         },
                         "delivery_status": {
                           "allowCellWrapping": false,
@@ -1062,7 +1069,8 @@
                           "label": "Delivery Status",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
-                          "computedValue": "{{orders_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"delivery_status\"]))}}"
+                          "computedValue": "{{orders_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"delivery_status\"]))}}",
+                          "validation": {}
                         },
                         "delivery_date": {
                           "allowCellWrapping": false,
@@ -1086,7 +1094,8 @@
                           "label": "Delivery Date",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
-                          "computedValue": "{{orders_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"delivery_date\"]))}}"
+                          "computedValue": "{{orders_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"delivery_date\"]))}}",
+                          "validation": {}
                         },
                         "expected_delivery_date": {
                           "allowCellWrapping": false,
@@ -1110,7 +1119,8 @@
                           "label": "Expected Delivery",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
-                          "computedValue": "{{orders_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"expected_delivery_date\"]))}}"
+                          "computedValue": "{{orders_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"expected_delivery_date\"]))}}",
+                          "validation": {}
                         },
                         "on_time": {
                           "allowCellWrapping": false,
@@ -1140,7 +1150,8 @@
                           "boxShadow": "{{orders_table.processedTableData.map((currentRow, currentIndex) => ( 'none'))}}",
                           "customAlias": "",
                           "iconName": "{{orders_table.processedTableData.map((currentRow, currentIndex) => ( currentRow.on_time=='1'?'tick' : 'cross'))}}",
-                          "buttonVariant": "TERTIARY"
+                          "buttonVariant": "TERTIARY",
+                          "validation": {}
                         },
                         "delivery_value": {
                           "allowCellWrapping": false,
@@ -1164,7 +1175,8 @@
                           "label": "delivery_value",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
-                          "computedValue": "{{orders_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"delivery_value\"]))}}"
+                          "computedValue": "{{orders_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"delivery_value\"]))}}",
+                          "validation": {}
                         },
                         "delivery_date_month": {
                           "allowCellWrapping": false,
@@ -1188,7 +1200,8 @@
                           "label": "delivery_date_month",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
-                          "computedValue": "{{orders_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"delivery_date_month\"]))}}"
+                          "computedValue": "{{orders_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"delivery_date_month\"]))}}",
+                          "validation": {}
                         },
                         "expected_delivery_date_month": {
                           "allowCellWrapping": false,
@@ -1212,7 +1225,8 @@
                           "label": "expected_delivery_date_month",
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
-                          "computedValue": "{{orders_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"expected_delivery_date_month\"]))}}"
+                          "computedValue": "{{orders_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"expected_delivery_date_month\"]))}}",
+                          "validation": {}
                         },
                         "order_value": {
                           "allowCellWrapping": false,
@@ -1238,7 +1252,8 @@
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
                           "computedValue": "{{orders_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"order_value\"]))}}",
-                          "cellBackground": ""
+                          "cellBackground": "",
+                          "validation": {}
                         },
                         "replacement": {
                           "allowCellWrapping": false,
@@ -1264,7 +1279,8 @@
                           "isSaveVisible": true,
                           "isDiscardVisible": true,
                           "computedValue": "{{orders_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"replacement\"]))}}",
-                          "cellBackground": ""
+                          "cellBackground": "",
+                          "validation": {}
                         }
                       },
                       "onRowSelected": "{{navigateTo('Selected',{oid:orders_table.selectedRow.order_id, cid:orders_table.selectedRow.customer_id},'SAME_WINDOW')}}",
@@ -1337,7 +1353,6 @@
         "layoutOnLoadActions": [
           [
             {
-              "id": "Search_getAllCustomers",
               "name": "getAllCustomers",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
@@ -1347,7 +1362,6 @@
               "timeoutInMillisecond": 10000
             },
             {
-              "id": "Search_getAllOrders",
               "name": "getAllOrders",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
@@ -1358,6 +1372,7 @@
             }
           ]
         ],
+        "layoutOnLoadActionErrors": [],
         "validOnPageLoadActions": true,
         "id": "Search",
         "deleted": false,

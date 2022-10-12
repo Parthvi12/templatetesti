@@ -1,6 +1,14 @@
 {
   "pages": [
     {
+      "id": "Conversations",
+      "isDefault": false
+    },
+    {
+      "id": "Investors",
+      "isDefault": false
+    },
+    {
       "id": "Dashboard",
       "isDefault": false
     },
@@ -20,8 +28,8 @@
   "viewMode": false,
   "appIsExample": false,
   "unreadCommentThreads": 0,
-  "color": "#ECECEC",
-  "icon": "pizza",
+  "color": "#C7F3E3",
+  "icon": "medical",
   "unpublishedAppLayout": {
     "type": "DESKTOP"
   },
